@@ -1,0 +1,26 @@
+Host flw-web
+	User ubuntu
+	HostName 192.168.0.6
+	ProxyJump flw-gateway
+	ServerAliveInterval 30
+	Compression yes
+ 	IdentityFile ~/.ssh/id_rsa_flw
+	LocalForward 3307 127.0.0.1:3306
+Host flw-gateway
+	HostName 217.182.254.163
+	ProxyJump dev
+	User ubuntu
+	Compression yes
+	IdentityFile ~/.ssh/id_rsa_flw
+	LocalForward 3307 127.0.0.1:3307
+Host flw-traitement
+        User ubuntu
+        HostName 192.168.0.5
+        ProxyCommand ssh -o Compression=no flw-gateway -W %h:%p
+        ServerAliveInterval 30
+        Compression yes
+        IdentityFile ~/.ssh/id_rsa_flw
+Host dev
+	LocalForward 3307 127.0.0.1:3307
+	HostName dev.reporting-dechets.com
+	Compression yes

@@ -1,0 +1,274 @@
+.main-onglet.x-toolbar.x-toolbar-default  {
+  label {
+    font-size: 20px !important;
+  }
+  .x-btn, .x-btn.x-btn-default-toolbar-small {
+    border: none;
+    &:hover {
+      background: unset;
+    }
+  }
+  &, .x-form-item-label, .x-box-inner, .x-box-layout-ct {
+    overflow: visible;
+  }
+  background: linear-gradient(white, #E7E7E7);
+  &.x-toolbar {
+    padding: 0;
+    border: none;
+  }
+  /*.x-form-type-radio {
+    &:before {
+      content: url("navbar-flw-triangle-gris-clair-rubrique.png");
+      width: 23px;
+      height: 12px;
+      position: absolute;
+      left: 50%;
+      bottom: -2px;
+      transform: translate(-50%, 0);
+      display: none;
+    }
+    background-repeat: no-repeat;
+    background-position: 8px center;
+    background-color: transparent;
+    &.x-form-cb-checked {
+      &:before {
+        display: inline-block;
+      }
+      background-color: $blue;
+      .x-form-cb-label {
+        color: white;
+        font-family: segouisb !important;
+      }
+    }
+    .x-form-cb-label {
+      padding-left: 58px;
+      padding-right: 12px;
+      line-height: 42px;
+      margin: 0;
+    }
+
+    .x-form-radio {
+      display: none;
+    }
+  }*/
+
+  .onglet-pending-import {
+    background-image: url("picto-navbar-pending-imports-etat1.png");
+
+    &.x-form-cb-checked {
+      background-image: url("picto-navbar-pending-imports-etat2.png");
+    }
+  }
+
+  .onglet-successfull-import {
+    background-image: url("picto-navbar-imported-successfully-etat1.png");
+
+    &.x-form-cb-checked {
+      background-image: url("picto-navbar-imported-successfully-etat2.png");
+    }
+  }
+}
+
+//-----------------------------------------------------------------------
+//--------------------------------- Onglet Principal ---------------------
+//-----------------------------------------------------------------------
+
+.x-container.container-tabPanel-main {
+  border-right: 1px solid #919497;
+  background: #f2f2f2 none !important;
+  //--------------------------------------------Button accordéon
+  .x-btn.x-box-item.button-accordion {
+    width: 24px !important;
+    background: #f2f2f2 none !important;
+    box-shadow: none;
+    padding: 0 !important;
+    border: transparent;
+    .icon-accordion {
+      background: url('bouton-agrandir-menu-terrain.png') center no-repeat;
+      width: 20px;
+      height: 20px;
+
+    }
+
+    &.x-btn-pressed {
+      .icon-accordion {
+        background: url('bouton-reduire-menu-terrain.png') center no-repeat !important;
+      }
+    }
+  }
+  //------------------------------------------Button tabPanel X4
+
+  .x-btn.button-onglets-main {
+    background: #f7f7f7 none !important;
+    box-shadow: none !important;
+    padding-left: 1px;
+    border-right: 0 !important;
+    border-left: 0 !important;
+    .x-btn-button {
+      display: flex;
+      justify-content: end;
+    }
+    .x-btn-icon-el.icon-onglets-main {
+      width: 50px;
+      height: 50px;
+      margin-left: 12px;
+    }
+    .x-btn-inner-default-small {
+      color: black !important;
+      font-weight: normal !important;
+      font-size: 18px !important;
+      font-family: segoui, serif !important;
+      padding: 0 10px 5px 5px;
+    }
+    .x-btn-default-small {
+      border: 0 !important;
+    }
+
+    &.selected {
+      background: #008ccb !important;
+      .x-btn-inner-default-small {
+        color: white !important;
+      }
+
+      &.expanded::after {
+        content: "";
+        position: absolute;
+        background: url('picto-fleche-select-blanche.png') center no-repeat;
+        width: 35px;
+        height: 50px;
+        top: 7px;
+        right: 1px;
+      }
+    }
+
+  }
+
+  .x-btn.button-onglets-dechets {
+    background: #f7f7f7 none !important;
+    box-shadow: none !important;
+    padding-left: 1px;
+    .x-btn-button {
+      display: flex;
+      justify-content: end;
+    }
+    &.selected {
+      background: #008ccb !important;
+      .x-btn-inner-default-small {
+        color: white !important;
+      }
+    }
+
+    &.selectedDechets {
+      background: #008ccb !important;
+      .x-btn-inner-default-small {
+        color: white !important;
+      }
+    }
+    &.selectedNed {
+      background: #008ccb !important;
+      .x-btn-inner-default-small {
+        color: white !important;
+      }
+    }
+    &.selectedTov {
+      background: #008ccb !important;
+      .x-btn-inner-default-small {
+        color: white !important;
+      }
+      .x-btn-inner-default-small {
+        color: black;
+      }
+      &.x-btn-default-small {
+        border-color: #909397;
+      }
+    }
+  }
+  /*
+  }
+  .container-sous-onglets-ned {
+    background: #f7f7f7 none !important;
+    box-shadow: none !important;
+    .selectedDechets {
+      background: #2a8dcb !important;
+      .x-btn-inner-default-small {
+        background: #2a8dcb !important;
+        color: white !important;
+      }
+      &.x-btn-default-small {
+        border-color: #909397;
+      }
+    }
+  }
+
+  .container-sous-onglets-tov {
+    background: #f7f7f7 none !important;
+    box-shadow: none !important;
+    .selectedDechets {
+      background: #2a8dcb !important;
+      .x-btn-inner-default-small {
+        background: #2a8dcb !important;
+        color: white !important;
+      }
+      &.x-btn-default-small {
+        border-color: #909397;
+      }
+    }
+  }*/
+}
+
+
+//--------------------------------------------------------------------
+// -------------------------- Sous-Onglets main ----------------------
+.sous-onglets-main{
+  .x-panel-body-default {
+    border: 0 !important;
+    .container-tabPanel-main {
+      .button-onglets-nav.x-btn-default-small {
+        border: 1px solid #545e6c;
+        padding: 2px 7px;
+        .x-btn-inner.x-btn-inner-default-small {
+          margin-left: 4px;
+        }
+        .x-btn-inner {
+          padding: 0 4px 0 4px !important;
+        }
+        &.button-TOV.x-btn.x-box-item {
+          border-radius: 4px 0 0 4px !important;
+        }
+        &.button-NED.x-box-item {
+          margin-left: -1px !important;
+        }
+        &.button-CED.x-box-item {
+          margin-left: -3px !important;
+        }
+        &.button-synthese.x-box-item {
+          margin-left: -4px !important;
+          border-radius: 0 4px 4px 0 !important;
+        }
+      }
+
+      .button-onglets-dechets{
+        border: 1px solid #545e6c !important;
+        &.x-btn-over{
+          border: 1px solid #545e6c !important
+        }
+        &.sous-onglet-dechet{
+          border-radius: 4px !important;
+        }
+        &.button-caracteristiqueNED{
+          border-radius: 4px 0 0 4px !important;
+        }
+        &.button-associationNED-NAF{
+          margin-left: -3px !important;
+        }
+        &.button-associationNED-CED {
+          margin-left: -6px !important;
+        }
+        &.button-melanges{
+          border-radius: 0 4px 4px 0 !important;
+          margin-left: -8px !important;
+        }
+      }
+    }
+  }
+}

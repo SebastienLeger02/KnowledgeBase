@@ -1,0 +1,224 @@
+.x-window {
+  .x-panel {
+    //background-color: #f2f2f2;
+    .x-panel-body {
+      //background-color: #f2f2f2;
+    }
+  }
+  padding: 0;
+  border-radius: 0 !important;
+  border: none;
+  //box-shadow: 0 10px (0px rgba(0, 0, 0, 0.25);
+
+  .x-window-header, .x-window-header-title-default {
+    /*background-color: $blue;
+    border-radius: 0 !important;
+    border: 1px solid $blue;
+    box-shadow: none !important;
+    padding-top: 2px;*/
+
+    .x-title-item {
+      font-size: 14px;
+      color: white;
+    }
+  }
+
+  .x-window-item {
+    border: none;
+  }
+
+  .x-form-type-radio {
+    &.shrinkage {
+      background: url('picto-flw-categories-shrinkage.png') no-repeat center 26px;
+    }
+
+    &.bio-waste {
+      background: url('picto-flw-categories-bio-waste.png') no-repeat center 26px;
+    }
+
+    &.animal-waste {
+      background: url('picto-flw-categories-animal-waste.png') no-repeat center 26px;
+    }
+
+    &.donation {
+      background: url('picto-flw-categories-donation.png') no-repeat center 26px;
+    }
+
+    &.dib {
+      background: url('picto-flw-categories-dib.png') no-repeat center 26px;
+    }
+
+    &.hyper{
+      background: url('picto-hypermarche-bleu-fonce-large.png') no-repeat center 26px;
+    }
+
+    &.super {
+      background: url('picto-supermarche-bleu-fonce-large.png') no-repeat center 26px;
+    }
+
+    &.both {
+      background: url('logo-navbar-flw-client-carrefour.png') no-repeat center 26px;
+    }
+  }
+}
+
+
+/*
+.x-window.x-window-default.skinning-window,.x-message-box {
+  border: 2px solid rgb(145, 148, 151) !important;
+  border-radius: 0 !important;
+  background-color: #f7f7f7;
+  .x-window-body-default {
+    background-color: #f7f7f7 !important;
+    border: none !important
+  }
+  .x-window-header-default {
+    background: #008ccb none !important;
+    border-color: #008ccb;
+    border-radius: 0 !important;
+    height: 35px !important;
+
+    .x-tool-img {
+      background: url('picto-case-fermeture-carre-gris-etat1.png') center no-repeat !important;
+      opacity: 1 !important;
+      &:hover {
+        background: url('picto-case-fermeture-carre-gris-etat2.png') center no-repeat !important;
+        opacity: 1 !important;
+      }
+    }
+    .x-window-bodyWrap {
+      .x-box-inner {
+        //background: #f7f7f7 none !important;
+      }
+    }
+  }
+  .x-box-inner {
+   background-color: #f2f2f2;
+    background-image: none !important;
+    //border-bottom:1px solid #a3a5a8 ;
+  }
+}
+
+.skinning-window{
+  .x-window-body.x-window-body-default > .x-box-inner {
+    overflow-y: scroll;
+    //background-color: #008ccb !important;
+
+  }
+}
+
+.window-main {
+  .display-none-combobox{
+    .x-form-item-label-text{
+      display: none;
+    }
+  }
+  .image-pictogramme{
+    top:0 !important;
+  }
+}
+
+.x-window-body.x-window-body-default.x-box-layout-ct.x-closable.x-window-body-closable.x-window-body-default-closable{
+  .x-box-inner {
+    overflow-y: scroll;
+  }
+}
+*/
+
+.x-window.skinning-window{
+  border-top: 1px solid rgb(145, 148, 151) !important;
+  border-bottom: 1px solid rgb(145, 148, 151) !important;
+  border-left: 1px solid rgb(145, 148, 151) !important;
+  border-right: none !important;
+  border-radius: 0 !important;
+  background-color: #f2f2f2;
+
+  .x-window-header-default {
+    background: #008ccb none !important;
+    border-color: #008ccb;
+    border-style: none !important;
+    border-radius: 0 !important;
+    height: 43px !important;
+
+    .x-title-item,.x-window-header-title-default.x-title-item {
+      padding-right: 5px;
+      padding-left: 10px;
+    }
+
+    .x-tool-img {
+      background: url('picto-case-fermeture-carre-etat1.png') center no-repeat !important;
+      opacity: 1 !important;
+      border:none !important;
+      &:hover {
+        background: url('picto-case-fermeture-carre-etat2.png') center no-repeat !important;
+        opacity: 1 !important;
+        border:none !important;
+      }
+    }
+
+    .x-box-inner {
+      background: #008ccb none !important;
+    }
+  }
+  .x-window-body.x-window-body-default{
+    background-color: #f2f2f2 !important;
+    border: none !important;
+  }
+
+  .window-form-skinning{
+    .x-panel-body.x-panel-body-default {
+      border: none !important;
+      background: #f2f2f2 !important;
+      .x-autocontainer-outerCt {
+        background-color: #f2f2f2 ;
+        .toolbar-bottom-window.x-toolbar-default {
+          padding: 0 !important;
+          border: none !important;
+/*
+          .x-btn.x-btn-default-toolbar-small.button-valider-add-sc {
+            background-color: #F7F7F7 !important;
+            background-image: none !important;
+            .icon-valider-add-sc.x-btn-icon-el-default-toolbar-small {
+              background: url('picto-valider-15px.png') center no-repeat;
+              width: 20px;
+              height: 20px;
+            }
+          }
+          .x-btn.x-btn-default-toolbar-small.button-annuler-add-sc {
+            background-color: #F7F7F7 !important;
+            background-image: none !important;
+            .icon-annuler-add-sc.x-btn-icon-el-default-toolbar-small {
+              background: url('picto-suppr-rond-14px.png') center no-repeat;
+              width: 20px;
+              height: 20px;
+            }
+          }  */
+        }
+      }
+    }
+  }
+
+  .x-window-bodyWrap > div{
+    background-color: #f2f2f2 !important;
+  }
+}
+
+.window-add-final-grid.skinning-window {
+  .x-window-body.x-window-body-default > .x-box-inner {
+    overflow-y: auto !important;
+
+  }
+  /*
+  .window-form-skinning {
+    .x-panel-body.x-panel-body-default {
+      border: none !important;
+    }
+  }
+  */
+}
+
+.image-asterisque{
+  background: url('picto-asterisque-bleu.png') center right no-repeat ;
+}
+
+

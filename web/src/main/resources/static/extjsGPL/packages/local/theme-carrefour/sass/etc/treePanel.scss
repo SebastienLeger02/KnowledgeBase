@@ -1,0 +1,42 @@
+.treePanel-main{
+  border : 1px solid #c2c5c8 !important;
+  background: #ebf1fc !important;
+  .treePanel-skinning{
+    .x-tree-icon {
+      background:url("picto-16px-liste-dossier-bleu-ferme.png") center no-repeat !important;
+      &.x-tree-icon-parent {
+        background:url("picto-16px-liste-dossier-bleu-ferme.png") center no-repeat;
+      }
+      &.x-tree-icon-parent-expanded{
+       background: url("picto-16px-liste-dossier-bleu-ouvert.png") center no-repeat !important;
+
+      }
+      &.x-tree-icon-leaf {
+        background: url("images/tree/leaf.gif") center no-repeat !important;
+      }
+    }
+    .x-panel-header-default{
+      background: #F2F2F2 !important;
+      border: #F2F2F2 !important;
+      .x-panel-header-title-default{
+        color: #545e6c;
+        font-size: 15px;
+        font-weight: normal;
+        font-family: segoui, serif;
+        line-height: 15px;
+      }
+    }
+    .x-grid-body{
+      background: #ebf1fc;  //Fond-écran des tabl, treepanel Seconde couche
+    }
+    .treePanel-skinning-column{
+
+    }
+    &.treePanel-association-ned-naf-second {
+      border-top: 1px solid #c2c5c8 !important;
+    }
+  }
+  .x-autocontainer-outerCt{
+    background: #ebf1fc ; // Fond-écran des tabl, treepanel couche externe
+  }
+}

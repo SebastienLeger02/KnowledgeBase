@@ -1,0 +1,115 @@
+$border-color: #545e6c;
+$blue: #115daa;
+$background-color: #e7E7E7;
+$dark-grey: #3e4a5c;
+
+@import "font";
+@import "onglet";
+@import "toolbar";
+@import "button";
+@import "grid";
+@import "window";
+@import "country";
+@import "treePanel";
+
+
+.checked-hauteur-charg{
+  display: none;
+}
+
+
+.pays {
+  &.France {
+    background: url("picto-flw-pays-argentine.png") no-repeat center !important;
+    .x-btn-wrap-default-small.x-btn-arrow-right:after {
+      display: none;
+    }
+  }
+}
+
+.pending-upload {
+  .x-grid-header-ct {
+    border: none;
+  }
+  .x-panel-body {
+    border-width: 1px 0 0 0;
+  }
+}
+
+.successfull-import {
+  .x-grid-header-ct {
+    border-left: none;
+  }
+
+  .x-panel-body {
+    border-width: 1px 1px 0 0;
+  }
+
+  .x-toolbar {
+    border-right: 1px solid $border-color;
+  }
+}
+
+
+#loadingGif {
+  width: 74px;
+  height: 74px;
+}
+
+.logo-suivi-dechet {
+  width: 200px !important;
+  height: 42px !important;
+  background: url('/dwd_web/client/img/theme/generic/terrain/tabBar/logo-suivi-dechet.png') no-repeat right;
+  margin-top: -15px;
+};
+
+.x-panel-header-default {
+  background-color: white !important;
+};
+
+div#panel-1012 {
+  width: 198px !important;
+  left: 1380px !important;
+  margin: 0 !important;
+  top: 5px !important;
+  height: 36px !important;
+  border-radius: 25px !important;
+};
+
+
+//----------------------------------------------------------------------------------------------------------------------
+//--------------------------------------HEADER MAIN --------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
+.x-container.header-main {
+  background: #f7f7f7 none !important;
+  border-bottom: 1px solid #c4c6c7;
+  .class-label-titre-header {
+    font-size: 24px;
+    font-family: segoui, serif !important;
+  }
+  .x-btn-inner-default-small {
+    color: black !important;
+    font-weight: normal !important;
+    padding: 0 16px 0 5px;
+  }
+}
+
+
+
+.class-tabPanel-main {
+  .container-main-card{
+    .class-equipements-main{
+
+      .x-panel-body-default.x-panel-body {
+        background: #f7f7f7 !important;
+        color: #000 !important;
+        font-size: 12px;
+        font-weight: normal;
+        font-family: tahoma, arial, verdana, sans-serif;
+        border: none !important;
+      }
+    }
+  }
+}
+
+

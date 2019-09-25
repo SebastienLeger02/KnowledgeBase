@@ -1,0 +1,72 @@
+.custom-slider {
+  padding: 0 7px 0 1px;
+  background-image: none;
+  height: 22px;
+  border-radius: 11px;
+  background-color: $blue;
+  background-position: 7px;
+
+  .x-slider {
+    .x-slider-end {
+      background: none;
+    }
+    background: none;
+    .x-slider-inner {
+      background-image: none;
+      .x-slider-thumb {
+        background-image: none;
+        background-color: #f3f3f3;
+        border-radius: 11px;
+        width: 20px;
+        height: 20px;
+        margin-top: -3px;
+      }
+    }
+  }
+}
+
+.x-toolbar.x-toolbar-default {
+  label {
+    display: flex;
+    align-items: center;
+  }
+
+  background-color: #E7E7E7;
+  background-image: none;
+}
+
+.periode-label {
+  color: $dark-grey;
+  font-size: 16px;
+  padding-left: 42px;
+  background: url("picto-calendrier-import-period.png") no-repeat 4px;
+}
+
+.deadline-label {
+  font-size: 14px;
+  color: #545e6c;
+  padding-left: 26px;
+  background: url("picto-deadline-horloge-grise.png") no-repeat 4px;
+}
+
+.unfinished-work {
+  padding-left: 28px;
+  color: #a3a3a3;
+  background: url("picto-flw-switch-unfinished-work-etat1.png") no-repeat left center;
+
+  &.checked {
+    color: #115daa;
+    background: url("picto-flw-switch-unfinished-work-etat2.png") no-repeat left center;
+  }
+}
+
+.job-done {
+  padding-left: 28px;
+  color: #a3a3a3;
+  background: url("picto-flw-switch-ready-for-analysis-etat1.png") no-repeat left center;
+
+  &.checked {
+    color: #115daa;
+    background: url("picto-flw-switch-ready-for-analysis-etat2.png") no-repeat left center;
+  }
+}

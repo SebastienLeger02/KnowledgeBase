@@ -1,0 +1,15 @@
+After=network.target
+
+[Service]
+Type=forking
+
+ExecStart=/home/ubuntu/javaServer/start.sh
+ExecStop=/home/ubuntu/javaServer/stop.sh
+
+User=ubuntu
+Group=ubuntu
+RestartSec=10
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

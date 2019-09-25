@@ -1,0 +1,1 @@
+Copier toutes les libs de lib_managed pour scala

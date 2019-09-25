@@ -1,0 +1,25 @@
+@font-face {
+  src: url("fonts/segoeui.ttf"), url("fonts/segoeui.eot");
+  font-family: segoui;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  src: url("fonts/segoeuib.ttf"), url("fonts/segoeui.eot");
+  font-family: segoui;
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  src: url("fonts/seguisb.ttf");
+  font-family: "segouisb";
+  font-style: normal;
+  font-weight: bold;
+}
+
+label, span {
+  font-family: segoui, serif !important;
+  font-size: 14px;
+}

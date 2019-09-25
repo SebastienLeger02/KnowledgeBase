@@ -1,0 +1,37 @@
+.picto-country {
+  background-position: center;
+  background-repeat: no-repeat;
+  &.France {
+    background-image: url('flags/picto-flw-pays-france.png');
+  }
+  &.Spain {
+    background-image: url('flags/picto-flw-pays-espagne.png');
+  }
+  &.Brasil {
+    background-image: url('flags/picto-flw-pays-bresil.png');
+  }
+  &.Argentine {
+    background-image: url('flags/picto-flw-pays-argentine-2.png');
+  }
+  &.Belgique {
+    background-image: url('flags/picto-flw-pays-belgique.png');
+  }
+  &.Chine {
+    background-image: url('flags/picto-flw-pays-chine.png');
+  }
+  &.Espagne {
+    background-image: url('flags/picto-flw-pays-espagne.png');
+  }
+  &.Italie {
+    background-image: url('flags/picto-flw-pays-italie.png');
+  }
+  &.Pologne {
+    background-image: url('flags/picto-flw-pays-pologne.png');
+  }
+  &.Roumanie {
+    background-image: url('flags/picto-flw-pays-roumanie.png');
+  }
+  &.Taiwan {
+    background-image: url('flags/picto-flw-pays-taiwan.png');
+  }
+}

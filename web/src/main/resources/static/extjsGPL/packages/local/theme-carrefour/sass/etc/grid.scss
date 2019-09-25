@@ -1,0 +1,275 @@
+.row-ko {
+  color: red;
+}
+
+.successfull-import {
+  .x-toolbar.x-toolbar-default {
+    background-color: #F2F2F2;
+    background-image: none;
+  }
+
+  label {
+    font-size: 15px !important;
+    color: $dark-grey;
+    font-family: segouisb !important;
+  }
+  .shrinkage-icon {
+    background: url('picto-flw-categories-shrinkage.png') no-repeat center;
+  }
+
+  .animal_waste-icon {
+    background: url('picto-flw-categories-animal-waste.png') no-repeat center;
+  }
+
+  .bio_waste-icon {
+    background: url('picto-flw-categories-bio-waste.png') no-repeat center;
+  }
+
+  .donation-icon {
+    background: url('picto-flw-categories-donation.png') no-repeat center;
+  }
+
+  .dib-icon {
+    background: url('picto-flw-categories-dib.png') no-repeat center;
+  }
+}
+
+.x-grid-with-row-lines {
+  table.x-grid-item {
+    .x-grid-cell {
+      vertical-align: middle;
+      .x-grid-cell-inner {
+        // line-height: 24px;
+      }
+      &:focus {
+        color: white!important;
+      }
+      .x-grid-item-selected{
+        color: white!important;
+        background: #008ccb !important;
+      }
+
+    }
+    background-color: #eef3fb;
+
+    &.x-grid-item-alt {
+      background-color: white;
+    }
+    &.x-grid-item-selected {
+      background-color: #D7E1F2;
+      border-top: 1px solid #96ABCF;
+      border-bottom: 1px solid #96ABCF;
+
+      &+.x-grid-item {
+        border: none;
+      }
+    }
+
+    .x-grid-item-focused .x-grid-cell-inner:before{
+      border: none;
+    }
+  }
+}
+
+.button-supprimer {
+  vertical-align: middle;
+  width: 32px !important;
+  height: 32px !important;
+  //height: 32px !important;
+  background: url('picto-flw-liste-supprimer-etat1.png') no-repeat center;
+  &:hover {
+    background: url('picto-flw-liste-supprimer-etat2.png') no-repeat center;
+  }
+}
+
+
+.picto-supprimer {
+  vertical-align: middle;
+  width: 32px !important;
+  height: 32px !important;
+  //height: 32px !important;
+  background: url('picto-flw-liste-supprimer-etat1.png') no-repeat center;
+  &:hover {
+    background: url('picto-flw-liste-supprimer-etat2.png') no-repeat center;
+  }
+}
+
+.x-progressbarwidget-default-cell {
+  vertical-align: middle !important;
+  .x-grid-cell-inner {
+    overflow: visible;
+    .x-progress.x-progress-default {
+      overflow: visible;
+      border: none;
+      background-color: #b6c7e3;
+      .x-progress-text-back {
+        position: absolute;
+        right: -38px;
+        top: -6px;
+        width: unset !important;
+        font-family: segoui;
+        font-weight: normal;
+        font-size: 14px;
+      }
+      .x-progress-bar.x-progress-bar-default {
+        background-image: none;
+        background-color: #5574a9;
+        overflow: visible;
+        .x-progress-text {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.market {
+  padding-left: 20px;
+  &.SUPER {
+    background: url('picto-liste-supermarche-panier.png') no-repeat 4px 7px;
+  }
+
+  &.HYPER {
+    background: url('picto-liste-hyper-caddie.png') no-repeat 4px 7px;
+  }
+}
+
+.type {
+  padding-left: 34px;
+  &.SHRINKAGE {
+    background: url('picto-flw-liste-categories-shrinkage.png') no-repeat 8px center;
+  }
+  &.BIO_WASTE {
+    background: url('picto-flw-liste-categories-bio-waste.png') no-repeat 8px center;
+  }
+  &.DONATION {
+    background: url('picto-flw-liste-categories-donation.png') no-repeat 8px center;
+  }
+  &.ANIMAL_WASTE {
+    background: url('picto-flw-liste-categories-animal-waste.png') no-repeat 8px center;
+  }
+  &.DIB {
+    background: url('picto-flw-liste-categories-dib-petit.png') no-repeat 8px center;
+  }
+}
+
+.container-main-card {
+  background: #f2f2f2 none !important;
+  .x-grid-td {
+    vertical-align: middle;
+  }
+  .x-grid-item-alt {
+    background-color: white !important;
+  }
+  .x-grid-item {
+    background-color: #ebf1fc;
+    &.x-grid-item:hover {
+      background-color: #dde6f6;
+    }
+  }
+
+  .x-box-inner {
+    border-bottom:none !important;
+  }
+
+  .importantCol {
+    font-size: 20px;
+    font-family: segoui, serif !important;
+  }
+  .materielCol {
+    font-size: 18px;
+    font-family: segoui, serif !important;
+  }
+  .x-grid-cell-first {
+    font-family: segoui, serif !important;
+  }
+
+  .grid-equipements {
+    margin: 0 5px 5px 5px !important;
+    border: 1px solid #abadaf !important;
+
+  }
+    .x-grid-header-ct {
+      border: none !important;
+      .x-box-inner {
+        .header-grid {
+          .x-column-header-text-container {
+            line-height: 16px;
+            .x-column-header-text-inner {
+              font-size: 17px !important;
+            }
+          }
+        }
+        &.x-column-header-align-left {
+          border-right: none !important;
+        }
+      }
+    }
+    .x-grid-view {
+      border-top: 1px solid #abadaf !important;
+      background-color: #eef3fb;
+    }
+
+  .display-none-filter {
+    border:0;
+    .x-column-header-inner{
+      display: none;
+      padding: 7px 10px 5px !important;
+    }
+    .x-autocontainer-innerCt{
+      vertical-align: middle;
+    }
+  }
+}
+
+.grid-final-equipements,.grid-final-dechets-TOV{
+  &.grid-display {
+    .x-panel-bodyWrap {
+      .x-grid-body {
+        .x-grid-view {
+          background-color: #eef3fb;
+          .x-grid-item-container {
+            display: none;
+            .x-grid-item-focused{
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.x-grid-with-row-lines{
+  table.x-grid-item.x-grid-item-selected{
+    background:#008ccb !important; ;
+    color: white !important;
+  }
+}
+
+//.x-grid-item-focused
+
+.x-grid-view {
+  background-color: #eef3fb;
+}
+
+.x-column-header {
+  font-weight: normal;
+  font-size: 14px;
+  font-family: segoui, serif !important;
+  color: black;
+  background-color: #F2F2F2 !important;
+  background-image: none !important;
+  border-right: none !important;
+}
+
+.x-box-inner {
+  background-color: #f2f2f2 ;
+  background-image: none !important;
+  //border-bottom:1px solid #a3a5a8 ;
+}
+
+
+
+
+

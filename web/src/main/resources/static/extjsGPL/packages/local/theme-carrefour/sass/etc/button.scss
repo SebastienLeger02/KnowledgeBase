@@ -1,0 +1,381 @@
+.main-onglet.x-toolbar {
+  .x-btn, .x-btn.x-btn-default-toolbar-small {
+    border: none;
+  }
+}
+
+.x-btn, .x-btn.x-btn-default-toolbar-small, .x-btn.x-btn-default-small {
+  &:hover {
+    border: 1px solid black;
+    background: linear-gradient(#E7E7E7, #D6D6D6);
+  }
+  &.x-btn-pressed:active {
+    border: 1px solid black;
+    background: linear-gradient(#DFDFDF, #C8C8C8);
+  }
+  background: linear-gradient(#F2F1F1, #D7D7D7);
+  border: 1px solid $border-color;
+  border-radius: 0;
+
+  padding: 2px 6px;
+
+  span {
+    font-size: 14px;
+  }
+
+  &.button-disconnect {
+    background: url("picto-navbar-connexion.png") no-repeat center !important;
+  }
+
+  &.button-account {
+    background: url("picto-navbar-compte-utilisateur.png") no-repeat center !important;
+  }
+
+  &.button-contact {
+    background: url("picto-navbar-support.png") no-repeat center !important;
+  }
+
+  &.button-info {
+    background: url("picto-navbar-info.png") no-repeat center !important;
+  }
+
+  &.button-trinov {
+    background: url("logo-navbar-trinov-gris.png") no-repeat center !important;
+  }
+
+  .x-btn-inner {
+    padding-left: 4px;
+  }
+
+  &.light-btn {
+    font-size: 13px !important;
+    border: 1px solid #A3A3A3;
+    background: linear-gradient(white, #E7E7E7);
+
+    &.x-btn-over {
+      border: 1px solid $border-color;
+    }
+  }
+
+  &.light-btn-grid.x-btn-grid-cell-small {
+    margin: 4px;
+    border: 1px solid #96abcf;
+    background: linear-gradient(white, #eff4fb);
+    border-radius: 0;
+
+    .x-btn-inner-grid-cell-small {
+      color: #90a2c2;
+      line-height: 14px;
+    }
+
+    &.x-btn-disabled {
+      opacity: 0; //work around car jouer avec setvisible cause des problemes
+    }
+
+    .picto-supprimer-btn {
+      vertical-align: middle;
+      width: 13px !important;
+      height: 13px !important;
+      background: url('picto-flw-liste-supprimer-etat1.png') no-repeat center;
+    }
+
+    .picto-confirmer-btn {
+      vertical-align: middle;
+      width: 13px !important;
+      height: 13px !important;
+      background: url('picto-flw-liste-valider-etat1.png') no-repeat center;
+    }
+
+    &:hover {
+      .x-btn-inner-grid-cell-small {
+        color: black;
+      }
+      background: linear-gradient(white, #eff4fb);
+
+      .picto-confirmer-btn {
+        background: url('picto-flw-liste-valider-etat2.png') no-repeat center;
+      }
+
+      .picto-supprimer-btn {
+        background: url('picto-flw-liste-supprimer-etat2.png') no-repeat center;
+      }
+    }
+
+    &:active {
+      border: 1px solid #5272A9;
+      background: linear-gradient(#f0f4fb, #bdcee5);
+      .x-btn-inner-grid-cell-small {
+        color: black;
+      }
+    }
+  }
+}
+
+.template-icon {
+  width: 29px !important;
+  height: 14px !important;
+  background: url("picto-download-template.png") no-repeat center;
+}
+
+.download-report-icon {
+  width: 29px !important;
+  height: 14px !important;
+  background: url("picto-download-report.png") no-repeat center;
+}
+
+.new-import-icon {
+  width: 36px !important;
+  height: 16px !important;
+  background: url("picto-new-import.png") no-repeat center;
+}
+
+.x-btn-icon-el {
+  //margin-left: 4px;
+}
+
+.picto-upload {
+  width: 13px;
+  height: 13px;
+  background: url('picto-importer-gris-clair.png') no-repeat center !important;
+}
+
+.button-no-background {
+  .x-btn-inner {
+    padding: 0 4px 0 0 !important;
+  }
+  background: none !important;
+}
+
+
+.collecterButton {
+  margin-left: 35px !important;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 15px;
+  background: url('bouton-collecter-picto-camion-2.png') center no-repeat !important;
+
+};
+
+
+.classicButton{
+  border-radius:0 !important;
+  height:24px;
+  border-width:1px !important;
+  border-color:#3e4a5c !important;
+  box-shadow:0 1px 0 0 #dcdcdc;
+  background-image:-ms-linear-gradient(top, #fefefe 0, #d4d4d4 100%);
+  background-image:-moz-linear-gradient(top, #fefefe 0, #d4d4d4 100%);
+  background-image:-o-linear-gradient(top, #fefefe 0, #d4d4d4 100%);
+  background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #fefefe), color-stop(1, #d4d4d4));
+  background-image:-webkit-linear-gradient(top, #fefefe 0, #d4d4d4 100%);
+  background-image:linear-gradient(to bottom, #fefefe 0, #d4d4d4 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#fefefe, endColorstr=#d4d4d4);
+  -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#fefefe, endColorstr=#d4d4d4);
+};
+
+.classic-button-ExtJS6 {
+  width:150px;
+  height:50px;
+  background: darkgrey;
+  color:white;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px;
+};
+.classic-button-ExtJS6:hover {
+  background: -moz-linear-gradient(top,
+          #fcf6f3 0%,
+          #bbc6cf 24%,
+          #5d5d5d 41%,
+          #959595 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom,
+          color-stop(0%,#ccc6c3),
+          color-stop(24%,#828c95),
+          color-stop(41%,#000000),
+          color-stop(100%,#7f7f7f)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,
+          #ccc6c3 0%,
+          #828c95 24%,
+          #000000 41%,
+          #7f7f7f 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,
+          #ccc6c3 0%,
+          #828c95 24%,
+          #000000 41%,
+          #7f7f7f 100%); /* Opera 11.10+ */
+  background: linear-gradient(
+                  #ccc6c3 0%,
+                  #828c95 24%,
+                  #000000 41%,
+                  #7f7f7f 100%); /* W3C */
+};
+
+.x-panel.class-tabPanel-main {
+  background: #f7f7f7 none !important;
+}
+
+.x-btn-focus.x-btn-default-small-focus {
+  border: 1px solid #545e6c; // border: none; 14h35 09/08
+}
+
+.x-container.container-tabPanel-main {
+  //-------------------------------------------Equipements
+  .button-equipements {
+    border-top: 1px solid #919497 !important;
+    border-bottom: 1px solid #cdd1d7 !important;
+    top: 49px !important;
+    .icon-equipements {
+      background: url('picto-navbar-equipements-etat1.png') center no-repeat;
+    }
+    &.selected {
+      .icon-equipements {
+        background: url('picto-navbar-equipements-etat2.png') center no-repeat !important;
+      }
+    }
+  }
+  //-------------------------------------------Dechets
+  .button-dechets {
+    border-bottom: 1px solid #cdd1d7 !important;
+    border-top: 1px solid #cdd1d7 !important;
+    top: 113px !important;
+    .icon-dechets {
+      background: url('picto-navbar-dechets-etat1.png') center no-repeat;
+
+      &.x-btn-icon-el {
+        width: 54px !important;
+      }
+    }
+    &.selected {
+      .icon-dechets {
+        background: url('picto-navbar-dechets-etat2.png') center no-repeat !important;
+      }
+    }
+  }
+
+  //-------------------------------------------Véhicules
+  .button-vehicules {
+    border-bottom: 1px solid #cdd1d7 !important;
+    border-top: 0 !important;
+    top: 178px !important;
+
+    .icon-vehicules {
+      background: url('picto-navbar-vehicules-etat1.png') center no-repeat;
+    }
+    &.selected {
+      .icon-vehicules {
+        background: url('picto-navbar-vehicules-etat2.png') center no-repeat !important;
+      }
+    }
+  }
+}
+
+//------------------------------------- Grid --------------------------------------
+// -------------------------------------------------------------------------------
+
+
+.button-header-grid-add {
+  background-color: #f2f2f2 !important;
+  background-image: none !important;
+  .picto-add-grid {
+    background: url('picto-ajouter-rond-14px.png') center no-repeat;
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.button-header-grid-edit {
+  background-color: #f2f2f2 !important;
+  background-image: none !important;
+  border-right: none !important;
+  border-left: none !important;
+  .picto-edit-grid {
+    background: url('picto-editer-global.png') center no-repeat;
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.button-header-grid-delete {
+  background-color: #f2f2f2 !important;
+  background-image: none !important;
+  .picto-delete-grid {
+    background: url('picto-suppr-rond-14px.png') center no-repeat;
+    width: 15px;
+    height: 15px;
+  }
+}
+
+// ------------------------------- Valider / Supprimer
+
+.x-btn.x-btn-default-toolbar-small.button-valider-add{
+  background-color: #F7F7F7 !important;
+  background-image: none !important;
+  .icon-valider-add.x-btn-icon-el-default-toolbar-small{
+    background: url('picto-valider-15px.png') center no-repeat;
+    width: 20px;
+    height: 20px;
+  }
+}
+.x-btn.x-btn-default-toolbar-small.button-annuler-add{
+  background-color: #F7F7F7 !important;
+  background-image: none !important;
+  .icon-annuler-add.x-btn-icon-el-default-toolbar-small {
+    background: url('picto-suppr-rond-14px.png') center no-repeat;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+// ---------------------------- Radio
+
+.x-form-cb-wrap-inner {
+  .x-form-radio-default.x-form-field.x-form-radio {
+    background-image: url('image-radio-deux-positions.png') !important;
+    background-position-x: -8px;
+    width: 15px;
+    height: 15px;
+
+  }
+}
+.x-form-cb-checked.button-radio{
+  .x-form-cb-wrap-inner {
+    .x-form-radio-default {
+      background-position: -8px -15px !important;
+    }
+  }
+}
+// -------------------------- Checkbox
+.checkbox-skinning {
+  .x-form-cb-wrap-inner {
+    .x-form-field.x-form-checkbox.x-form-checkbox-default {
+      background: url('case-a-cocher-etat1.png') center no-repeat ;
+      width: 15px;
+      height: 15px;
+    }
+  }
+  &.x-form-cb-checked .x-form-checkbox-default {
+    background: url('case-a-cocher-etat2.png') center no-repeat !important;
+    width: 15px;
+    height: 15px;
+  }
+}
+
+
+// ------------------------- TextField
+
+.x-field.x-from-item {
+  .x-from-item-label {
+    .x-from-item-body{
+      .x-form-trigger-wrap{
+        .x-form-text-default{
+          background-image: none !important;
+        }
+      }
+    }
+  }
+}
+
+//---------------- Contoure bouton selectionné
+.x-btn-focus.x-btn-default-small .x-btn-wrap{
+  outline: none !important;
+}
